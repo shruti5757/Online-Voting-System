@@ -1,0 +1,101 @@
+.container {
+  width: 50%;
+  margin: 50px auto;
+  background: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.container h1 {
+  text-align: center;
+}
+
+.input-box {
+  margin-bottom: 20px;
+}
+
+.input-box label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-box input[type="text"],
+.input-box input[type="email"],
+.input-box input[type="password"],
+.input-box input[type="date"],
+.input-box input[type="file"],
+.input-box select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.gender-title {
+  font-weight: bold;
+}
+
+.gender-category input[type="radio"] {
+  margin-right: 10px;
+}
+
+.button-container {
+  text-align: center;
+}
+
+.button-container button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button-container button:hover {
+  background-color: #45a049;
+}
+
+.form-group {
+  margin-top: 20px;
+}
+
+.agree-term {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.label-agree-term {
+  display: inline-block;
+  font-size: 14px;
+}
+
+.label-agree-term span {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: #ccc;
+  margin-right: 5px;
+  position: relative;
+  vertical-align: middle;
+}
+
+.label-agree-term span::before {
+  content: '';
+  width: 3px;
+  height: 9px;
+  border: 2px solid #fff;
+  border-top: none;
+  border-right: none;
+  position: absolute;
+  top: 2px;
+  left: 4px;
+  transform: rotate(-45deg);
+  opacity: 0;
+}
+
+.label-agree-term input[type="checkbox"]:checked + span::before {
+  opacity: 1;
+}
